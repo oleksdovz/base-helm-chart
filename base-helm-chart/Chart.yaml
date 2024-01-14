@@ -3,4 +3,4 @@ name: base-helm-chart
 description: A Base Helm Chart for Helm charts
 engine: gotpl
 type: library
-version: 0.2.3
+version: 0.0.1
