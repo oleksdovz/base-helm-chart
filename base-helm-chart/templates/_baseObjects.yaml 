@@ -1,0 +1,18 @@
+{{- define "base-helm-chart.commonObjects" -}}
+
+#serviceAccount
+{{ include "baseChart.serviceAccount" $mereged_context }}
+
+# service
+{{ include "baseChart.service" $mereged_context }}
+
+# deployment
+{{ include "baseChart.deployment" $mereged_context }}
+
+# hpa
+{{ include "baseChart.hpa" $mereged_context }}
+
+# ingrees
+{{ include "baseChart.ingress" $mereged_context }}
+
+{{- end -}}
